@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favori Dizim</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sigmar&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+    <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#characters">Karakterler</a></li>
+                <li><a href="#episodes">Bölümler</a></li>
+            </ul>
+            <div class="profile-icon">
+                <img src="images/profile.jpg" alt="Profil Fotoğrafı">
+            </div>
+        </nav>
+    </header>
+    
+    <div class="content-container">
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1><a href="https://www.imdb.com/title/tt0944947/" target="_blank" class="game-of-thrones-title">GAME OF THRONES</a></h1>
+                <h2>George R.R. Martin</h2>
+                <p>2011-2019</p>
+                <button id="favorite-btn">
+                    <span id="heart-emoji">❤️</span>
+                </button>
+            </div>
+            <div class="poster-container">
+                <div class="poster">
+                    <img src="images/poster.jpg" alt="Dizi Afişi">
+                </div>
+                <div class="poster-info">
+                    <p><strong>IMDb Puanı:</strong> 9.3</p>
+                    <p><strong>Sezon Sayısı:</strong> 8</p>
+                    <p><strong>Bölüm Sayısı:</strong> 73</p>
+                    <p><strong>Yayın Tarihi:</strong> 2011-2019</p>
+                    <p><strong>Tür:</strong> Fantastik, Dram, Macera</p>
+                    <p><strong>Ödüller:</strong> 59 Emmy Ödülü</p>
+                </div>
+                <div class="poster-description">
+                    <p>Game of Thrones, George R.R. Martin'in Buz ve Ateşin Şarkısı serisinden uyarlanan, Orta Çağ temalı bir fantastik dizidir. Westeros ve Essos adlı kıtalarda geçen hikâye, Demir Taht’ı ele geçirmek isteyen hanedanlar arasındaki entrikalar, ihanetler ve savaşları konu alır.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="characters" class="characters">
+            <h2>Ana Karakterler</h2>
+            <div class="character-container">
+                <div class="character">
+                    <img src="images/char1.jpg" alt="Jon Snow">
+                    <span>JON SNOW</span>
+                    <p>Jon Snow, Game of Thrones dizisinin önemli karakterlerinden biridir. Ned Stark’ın evlat edindiği ve büyüttüğü biri olarak, her zaman kimliğini ve yerini sorgulamıştır. </p>
+                </div>
+                <div class="character">
+                    <img src="images/char2.jpg" alt="Daenerys Targaryen">
+                    <span>DAENERYS TARGARYEN</span>
+                    <p>Daenerys Targaryen, Game of Thrones dizisinin en önemli karakterlerinden biridir. Targaryen Hanesi’nin son temsilcilerinden biri olarak sürgünde büyümüştür.</p>
+                </div>
+                <div class="character">
+                    <img src="images/char3.jpg" alt="Tyrion Lannister">
+                    <span>TYRION LANNISTER</span>
+                    <p>Tyrion Lannister, Game of Thrones dizisinin en zeki ve keskin dilli karakterlerinden biridir. Lannister Hanesi’nin bir üyesi olmasına rağmen, fiziksel özellikleri nedeniyle küçümsenmiş ve ailesi tarafından tam olarak kabul görmemiştir. </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="episodes" class="episodes">
+            <h2>Bölümler</h2>
+            <div class="episode-cards">
+                <div class="episode-card">
+                    <h3>1. Bölüm: "Winter Is Coming"</h3>
+                    <p>Kuzey'deki Winterfell'da, Eddard Stark ailesiyle birlikte yaşamaktadır. Kral Robert Baratheon, Eddard'ı Kral'ın Eli olmaya davet eder. Bu arada, Daenerys Targaryen, kardeşi Viserys tarafından Dothraki lideri Khal Drogo ile evlendirilir.</p>
+                    <button class="watch-button">
+                        <i class="fas fa-play"></i> İzle
+                    </button>
+                </div>
+                <div class="episode-card">
+                    <h3>2. Bölüm: "The Kingsroad"</h3>
+                    <p>Eddard Stark, Kral'ın Eli olarak görevine başlamak üzere Güney'e doğru yola çıkar. Jon Snow, Gece Nöbetçileri'ne katılmak için Duvar'a doğru ilerler. Daenerys, Dothraki kültürüne alışmaya çalışır.</p>
+                    <button class="watch-button">
+                        <i class="fas fa-play"></i> İzle
+                    </button>
+                </div>
+                <div class="episode-card">
+                    <h3>3. Bölüm: "Lord Snow"</h3>
+                    <p>Eddard, Kral Toprakları'na varır ve Kral'ın Eli olarak görevine başlar. Jon Snow, Duvar'da eğitim alırken zorluklarla karşılaşır. Daenerys, kocası Khal Drogo'nun desteğiyle kendi gücünü keşfetmeye başlar.</p>
+                    <button class="watch-button">
+                        <i class="fas fa-play"></i> İzle
+                    </button>
+                </div>
+                <div class="episode-card">
+                    <h3>4. Bölüm: "Cripples, Bastards, and Broken Things"</h3>
+                    <p>Eddard, Kral Toprakları'ndaki politik entrikalarla uğraşır. Jon Snow, Duvar'da yeni arkadaşlar edinir. Tyrion Lannister, Winterfell'a gelir ve Bran Stark ile ilgilenir.</p>
+                    <button class="watch-button">
+                        <i class="fas fa-play"></i> İzle
+                    </button>
+                </div>
+                <div class="episode-card">
+                    <h3>5. Bölüm: "The Wolf and the Lion"</h3>
+                    <p>Eddard, Kral Robert ile arasındaki gerginlik artarken, Lannisterlar'ın gücünü fark eder. Tyrion, Catelyn Stark tarafından tutuklanır. Daenerys, hamile olduğunu öğrenir.</p>
+                    <button class="watch-button">
+                        <i class="fas fa-play"></i> İzle
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div> 
+
+    <footer>
+        <p>Web sitesi tasarımcısı: Samethan Kazanbaş</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/samethan-kazanba%C5%9F-632a98238/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://github.com/samethankznbs" target="_blank">
+                <img src="images/github.png" alt="GitHub" class="social-icon">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
