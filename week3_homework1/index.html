@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrenci Listesi</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <h1>Öğrenci Listesi</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Sınıf</th>
+                <th>Not Ortalaması</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            
+        </tbody>
+    </table>
+    
+    <h2>Yeni Öğrenci Ekle</h2>
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="İsim" required>
+        <input type="text" id="class" placeholder="Sınıf" required>
+        <input type="number" id="gpa" placeholder="Not Ortalaması" required>
+        <button type="submit">Ekle</button>
+    </form>
+</body>
+</html>
