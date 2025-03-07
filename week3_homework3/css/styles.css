@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+#profilesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+#sliderContainer {
+    width: 80%; 
+    margin: 20px auto;
+    justify-content:flex-end;
+    display: flex;
+}
+
+.profile-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px; 
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.slider-item .profile-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+
+.slider-item .profile-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.slider-item .profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #007BFF;
+    color: white;
+    border: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slick-prev {
+    left: -70px;
+}
+
+.slick-next {
+    right: -70px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: #0056b3;
+}
