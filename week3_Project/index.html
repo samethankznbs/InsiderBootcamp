@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <div class="company-name">
+                <h1>dkkn.com</h1>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" class="search-input" id="search-id" placeholder="ID İle Arama Yapabilrsiniz">
+            <button class="search-button">🔍</button>
+            <button id="reset-search" class="reset-button">Sıfırla</button>
+            <select id="sort-options" class="sort-dropdown">
+                <option value="default">Sıralama Seçiniz</option>
+                <option value="title-asc">Ada Göre (A-Z)</option>
+                <option value="title-desc">Ada Göre (Z-A)</option>
+                <option value="price-asc">Fiyata Göre (Artan)</option>
+                <option value="price-desc">Fiyata Göre (Azalan)</option>
+                <option value="rating-asc">Değerlendirmeye Göre (Artan)</option>
+                <option value="rating-desc">Değerlendirmeye Göre (Azalan)</option>
+            </select>
+        </div>
+        
+
+        <div class="slider"></div>
+        <div class="favorite"><span>Favoriler</span></div>
+        <div class="products"></div>
+        <div class="purchase"><span>Sepetim</span></div>
+    </div>
+
+    <div id="product-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Product Image">
+            <p id="modal-description"></p>
+            <p><strong>Kategori:</strong> <span id="modal-category"></span></p>
+            <p><strong>Fiyat:</strong> <span id="modal-price"></span> $</p>
+            <p><strong>Rating:</strong> <span id="modal-rating"></span></p>
+        </div>
+    </div>
+</body>
+</html>
